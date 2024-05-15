@@ -21,10 +21,6 @@ namespace IOT_SOCKET_BE
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
-
-
-        
-
+                });     
     }
 }

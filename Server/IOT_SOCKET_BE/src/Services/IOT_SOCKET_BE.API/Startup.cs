@@ -1,3 +1,4 @@
+﻿using IOT_SOCKET_BE.Hubs;
 using IOT_SOCKET_BE.MQTT;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,13 +28,27 @@ namespace IOT_SOCKET_BE
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "IOT_SOCKET_BE", Version = "v1" });
             });
             services.AddHostedService<MQTTService>();
+            // SignalR
+            services.AddSignalR();
+
+            var origins = Configuration.GetValue<string>("AllowedOrigins").Split(";");
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", builder =>
+                {
+                    builder.WithOrigins(origins)
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials() // Cho phép sử dụng các credentials từ origin cụ thể
+                        .WithExposedHeaders("Access-Control-Allow-Origin"); // Chỉ định header được tiết lộ
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,9 +67,12 @@ namespace IOT_SOCKET_BE
 
             app.UseAuthorization();
 
+            app.UseCors("CorsPolicy");
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<Chathub>("/chathub");
             });
         }
     }
