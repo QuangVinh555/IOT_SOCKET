@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8E490802-76F3-4601-8A2F-A76589E938F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{6BC88653-C0DC-43A5-A4B1-5AA3912E6EAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BB4A9F5E-980E-4B38-A031-8BCD19DAC822}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IOT_SOCKET_BE.API", "IOT_SOCKET_BE.API", "{1AB63458-5112-4F0C-A634-FEA14D4133C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IOT_SOCKET_BE_Application", "IOT_SOCKET_BE_Application", "{F8676859-AFC1-460C-BE75-844417E81586}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IOT_SOCKET_BE", "src\Services\IOT_SOCKET_BE.API\IOT_SOCKET_BE.csproj", "{9E04AA8F-ABF5-4EF4-845A-743EE6A071C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E04AA8F-ABF5-4EF4-845A-743EE6A071C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E04AA8F-ABF5-4EF4-845A-743EE6A071C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E04AA8F-ABF5-4EF4-845A-743EE6A071C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E04AA8F-ABF5-4EF4-845A-743EE6A071C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6BC88653-C0DC-43A5-A4B1-5AA3912E6EAF} = {8E490802-76F3-4601-8A2F-A76589E938F0}
+		{BB4A9F5E-980E-4B38-A031-8BCD19DAC822} = {8E490802-76F3-4601-8A2F-A76589E938F0}
+		{1AB63458-5112-4F0C-A634-FEA14D4133C2} = {BB4A9F5E-980E-4B38-A031-8BCD19DAC822}
+		{F8676859-AFC1-460C-BE75-844417E81586} = {BB4A9F5E-980E-4B38-A031-8BCD19DAC822}
+		{9E04AA8F-ABF5-4EF4-845A-743EE6A071C0} = {1AB63458-5112-4F0C-A634-FEA14D4133C2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1120E584-B1CF-46BE-AF7B-C01715A2EA5A}
+	EndGlobalSection
+EndGlobal

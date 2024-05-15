@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "qNKsJBe/oS4PM+ZbezxZvbS1XkslClWwX8aPiAsxSO4rDeFiskMDfTH+SyACJdWnSOBYCoBBYK90zsYfdWtSzw==",
+  "success": true,
+  "projectFilePath": "D:\\Working2\\IOT_SOCKET\\Server\\IOT_SOCKET_BE\\src\\Services\\IOT_SOCKET_BE.API\\IOT_SOCKET_BE.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\isd-d\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\isd-d\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\isd-d\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\isd-d\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\isd-d\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\isd-d\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
