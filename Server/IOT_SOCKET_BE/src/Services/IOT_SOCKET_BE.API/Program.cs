@@ -23,5 +23,8 @@ namespace IOT_SOCKET_BE
                     webBuilder.UseStartup<Startup>();
                 });
 
+
+        
+
     }
 }
