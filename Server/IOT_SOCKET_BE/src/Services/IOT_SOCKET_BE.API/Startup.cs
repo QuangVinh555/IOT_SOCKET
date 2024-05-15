@@ -1,3 +1,4 @@
+using IOT_SOCKET_BE.MQTT;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +33,7 @@ namespace IOT_SOCKET_BE
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "IOT_SOCKET_BE", Version = "v1" });
             });
+            services.AddHostedService<MQTTService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
