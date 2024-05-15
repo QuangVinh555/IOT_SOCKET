@@ -11,7 +11,7 @@ const SignalRComponent = () => {
 
     useEffect(() => {
         const newConnection = new signalR.HubConnectionBuilder()
-            .withUrl("https://localhost:5000/chathub") // Thay thế bằng URL của máy chủ SignalR
+            .withUrl("https://localhost:44358/chathub") // Thay thế bằng URL của máy chủ SignalR
             .withAutomaticReconnect()
             .build();
 
