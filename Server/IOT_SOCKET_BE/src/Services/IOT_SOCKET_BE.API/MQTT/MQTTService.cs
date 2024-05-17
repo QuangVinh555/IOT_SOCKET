@@ -5,6 +5,10 @@ using System;
 using uPLibrary.Networking.M2Mqtt;
 using uPLibrary.Networking.M2Mqtt.Messages;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json;
+using IOT_SOCKET_BE.DTOs;
+using IOT_SOCKET_BE.Hubs;
+using Microsoft.AspNetCore.SignalR;
 
 namespace IOT_SOCKET_BE.MQTT
 {
@@ -15,6 +19,12 @@ namespace IOT_SOCKET_BE.MQTT
         private readonly int port = 8883;
         private readonly string username = "vinhvq";
         private readonly string password = "Voquangvinh2552001";
+        private readonly IHubContext<Chathub> _hubContext;
+
+        public MQTTService(IHubContext<Chathub> hubContext)
+        {
+            _hubContext = hubContext;
+        }
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
@@ -41,7 +51,11 @@ namespace IOT_SOCKET_BE.MQTT
         private void MqttClient_MqttMsgPublishReceived(object sender, MqttMsgPublishEventArgs e)
         {
             string message = Encoding.UTF8.GetString(e.Message);
+            var Mqqt = JsonConvert.DeserializeObject<MQTTResponse>(message);
+
             Console.WriteLine($"Received message: {message}");
+
+            _hubContext.Clients.All.SendAsync("ReceiveMessage", "User", Mqqt.Msg);
         }
 
         public Task StopAsync(CancellationToken cancellationToken)

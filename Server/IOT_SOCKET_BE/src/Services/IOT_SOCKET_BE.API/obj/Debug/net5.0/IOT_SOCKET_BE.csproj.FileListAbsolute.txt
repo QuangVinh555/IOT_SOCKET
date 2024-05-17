@@ -99,3 +99,4 @@ D:\Working2\IOT_SOCKET\Server\IOT_SOCKET_BE\src\Services\IOT_SOCKET_BE.API\obj\D
 D:\Working2\IOT_SOCKET\Server\IOT_SOCKET_BE\src\Services\IOT_SOCKET_BE.API\obj\Debug\net5.0\IOT_SOCKET_BE.pdb
 D:\Working2\IOT_SOCKET\Server\IOT_SOCKET_BE\src\Services\IOT_SOCKET_BE.API\obj\Debug\net5.0\IOT_SOCKET_BE.genruntimeconfig.cache
 D:\Working2\IOT_SOCKET\Server\IOT_SOCKET_BE\src\Services\IOT_SOCKET_BE.API\obj\Debug\net5.0\ref\IOT_SOCKET_BE.dll
+D:\Working2\IOT_SOCKET\Server\IOT_SOCKET_BE\src\Services\IOT_SOCKET_BE.API\bin\Debug\net5.0\Newtonsoft.Json.dll

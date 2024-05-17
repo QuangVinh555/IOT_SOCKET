@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "xqkGIhuaXCM8JDIoFoTP3KAfJt7BlF4baB2tHql3ZZcyqYM8RdEDcMaRQKjB2NtCjphG8BPfTTwcLXJX8NPSUw==",
+  "dgSpecHash": "GMQdOJVZ/TRAdG5WirhXvA+Tx0bAkbRq72z/FkV4VaXxbBNZ6C0ftVqnxNkKMasvLU3m1t1intzLcPJzRVIpfw==",
   "success": true,
   "projectFilePath": "D:\\Working2\\IOT_SOCKET\\Server\\IOT_SOCKET_BE\\src\\Services\\IOT_SOCKET_BE.API\\IOT_SOCKET_BE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\isd-d\\.nuget\\packages\\m2mqtt\\4.3.0\\m2mqtt.4.3.0.nupkg.sha512",
     "C:\\Users\\isd-d\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\isd-d\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\isd-d\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\isd-d\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\isd-d\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\isd-d\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",

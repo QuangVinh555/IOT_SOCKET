@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IOT_SOCKET_BE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be43e0801b3fc9591d939e435bf4e03406161401")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ef5f7df98b682359719af846196b0d2481eb74f")]
 [assembly: System.Reflection.AssemblyProductAttribute("IOT_SOCKET_BE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IOT_SOCKET_BE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
